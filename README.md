@@ -1,2 +1,2 @@
 # crud-JS
-crud listando en tabla con Java Script
+crud listando en diferentes formas con Java Script
