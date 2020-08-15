@@ -27,12 +27,9 @@
         <div class="bg-dark border-right" id="sidebar-wrapper">
             <div class="sidebar-heading text-light text-center">MENU</div>
             <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Hola</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Holi</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Holis</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Holiwi</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Bye</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Mmm ya.</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Registro</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Listar</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-light">Autor</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -58,17 +55,94 @@
 
             <div class="container">
 
-                
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        Registro de la Información
+                    </div>
 
+                    <form class="card-body form  was-validated">
+                        <div id="divFoto" class="text-center">
+                            <img class="img-fluid img-thumbnail rounded-circle" src="img/prueba.jpg" width="300px">
+                        </div>
+                        <div class="row p-4">
+
+                            <div class="form-group col-6">
+                                <label for="inputNombres" class="col-sm-3 col-form-label">Nombres</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputNombres" placeholder="Ej. Arthur"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="inputApellidos" class="col-sm-3 col-form-label">Apellidos</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputApellidos"
+                                        placeholder="Ej. Pendragon" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="inputDocumento" class="col-sm-3 col-form-label">Documento</label>
+                                <div class="col-sm-12">
+                                    <input type="number" class="form-control" id="inputDocumento"
+                                        placeholder="Ej. 1234567890" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="selectGenero" class="col-sm-3 col-form-label">Genero</label>
+                                <div class="col-sm-12">
+                                    <div class="form-check form-check-inline col-4">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1" required>
+                                        <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-4">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline col-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Otro</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label id="labelEmail" class="col-sm-3 col-form-label">E-Mail</label>
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        placeholder="Ej. Arthur@ejemplo.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="inputCelular" class="col-sm-4 col-form-label">Número Celular</label>
+                                <div class="col-sm-12">
+                                    <input type="number" class="form-control" id="inputCelular"
+                                        placeholder="Ej. 3155555555" required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer text-center">
+                            <div class="custom-control custom-checkbox text-center">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                                <label class="custom-control-label" for="customCheck1">Acepto contrato con el
+                                    Diablo</label>
+                            </div>
+                            <button type="submit" class="btn btn-success mt-2">Registrar</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
+
+            <!-- /#page-content-wrapper -->
         </div>
+
+        <!-- /#wrapper -->
     </div>
-    <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-
 
     <!-- Boostarop core JavaScript -->
     <script src="libs/jquery/jquery-3.5.1.slim.min.js"></script>
