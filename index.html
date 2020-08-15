@@ -57,14 +57,21 @@
 
                 <div class="card mt-5">
                     <div class="card-header text-center">
-                        Registro de la Información
+                        Registro de Información
                     </div>
 
                     <form class="card-body form  was-validated">
                         <div id="divFoto" class="text-center">
-                            <img class="img-fluid img-thumbnail rounded-circle" src="img/prueba.jpg" width="300px">
+                            <img id="foto" class="img-fluid img-thumbnail" src="img/prueba.jpg">
+
+                            <div id="divFile" class="">
+                                <img id="imgFile" src="img/camara.png">
+                                <input id="btnFile" type="file" accept=".jpg,.png">
+                            </div>
+
                         </div>
-                        <div class="row p-4">
+
+                        <div class="row p-5 mt-4">
 
                             <div class="form-group col-6">
                                 <label for="inputNombres" class="col-sm-3 col-form-label">Nombres</label>
